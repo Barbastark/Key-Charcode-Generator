@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+	<body onkeypress="uniCharCode(event)" onkeydown="uniKeyCode(event)">
+	<div id="wrapper"> 
+		<h1>Unicode character code</h1>
+		<p id="char-code">0</p>
+		<h1>Unicode key code</h1>
+		<p id="key-code">0</p>
+	</div>
+	<script>
+		
+		function uniCharCode(event) {
+			var char = event.which || event.keyCode;
+			document.getElementById("char-code").innerHTML = char;
+		}
+
+		function uniKeyCode(event) {
+			var key = event.keyCode;
+			document.getElementById("key-code").innerHTML = key;
+		}
+		</script>
+	</body>
+</html>
+ 
+
